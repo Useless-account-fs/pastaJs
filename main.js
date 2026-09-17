@@ -1,9 +1,12 @@
-var a = 8
-var b = 23
+const formulario = document.getElementById("calcForm")
 
-function somar(a,b){
-    var c = a+b
-    return (a+b)
-}
+formulario.addEventListener("submit", function(e){
+    e.preventDefault();
 
-console.log(somar(a,b))
+    const a = Number(document.getElementById("num1").value)
+    const b = number(document.getElementById("num2").value)
+
+    const soma = a+b
+
+    document.getElementById("resultado").tetxContent = soma
+})
